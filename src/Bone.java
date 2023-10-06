@@ -6,7 +6,7 @@ import static java.lang.Math.floor;
  * it represents an individual bone
  */
 public class Bone {
-    enum BoneType {
+    public enum BoneType {
         Alien,
         Bird,
         Human

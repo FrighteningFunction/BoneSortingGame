@@ -44,7 +44,8 @@ public class BoneGenerator {
         JLabel boneLabel = new JLabel(currentBone.boneImage);
         container.removeAll(); // Clear previous bones, if any.
         container.add(boneLabel);
-        container.revalidate();
-        container.repaint();
+
+        container.revalidate(); //make sure that all contents are updated
+        container.repaint(); //make sure that the visual rendering is complete
     }
 }
