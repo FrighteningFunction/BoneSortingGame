@@ -18,6 +18,10 @@ public class GameMain {
             e.printStackTrace();
         }
 
+        //load the bones from the directories. If that does not work,
+        //it throws a fatal error
+        Bone.loadBoneImages();
+
         // Initialize the game UI
         uiManager = new UIManager();
     }
