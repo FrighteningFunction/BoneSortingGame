@@ -1,5 +1,4 @@
 import javax.swing.*;
-import java.awt.*;
 
 public class Scoreboard extends JLabel {
     private int Score;
@@ -20,7 +19,6 @@ public class Scoreboard extends JLabel {
     }
 
     private void setupUI(){
-        this.setLayout(new BorderLayout());
         this.setBorder(BorderFactory.createTitledBorder("Your score: "));
     }
 
