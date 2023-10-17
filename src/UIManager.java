@@ -39,9 +39,9 @@ public class UIManager {
 
         // Sorting areas (East side)
         sortingAreaPanel = new JPanel(new GridLayout(3, 1));
-        sortingAreaPanel.add(new SortingArea(Bone.BoneType.Alien, boneGenerator));
-        sortingAreaPanel.add(new SortingArea(Bone.BoneType.Bird, boneGenerator));
-        sortingAreaPanel.add(new SortingArea(Bone.BoneType.Human, boneGenerator));
+        sortingAreaPanel.add(new SortingArea(Bone.BoneType.Red, boneGenerator));
+        sortingAreaPanel.add(new SortingArea(Bone.BoneType.Green, boneGenerator));
+        sortingAreaPanel.add(new SortingArea(Bone.BoneType.Blue, boneGenerator));
         mainPanel.add(sortingAreaPanel, BorderLayout.EAST);
 
         // South part reserved for future additional graphics
