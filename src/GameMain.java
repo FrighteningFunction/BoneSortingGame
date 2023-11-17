@@ -7,7 +7,6 @@ public class GameMain {
         startGame();
 
         // For the sake of simplicity, there's no endGame() in this initial version.
-        // It could be triggered by a game timer expiration or a specific event.
     }
 
     public static void initializeGame() {

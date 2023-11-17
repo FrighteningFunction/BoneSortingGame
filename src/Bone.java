@@ -46,9 +46,9 @@ public class Bone {
     }
 
     public static void loadBoneImages() {
-        ALIEN_BONES = loadImagesFromDirectory("path/to/alien/bones");
-        BIRD_BONES = loadImagesFromDirectory("path/to/bird/bones");
-        HUMAN_BONES = loadImagesFromDirectory("path/to/human/bones");
+        ALIEN_BONES = loadImagesFromDirectory("./images/Alien");
+        BIRD_BONES = loadImagesFromDirectory("./images/Bird");
+        HUMAN_BONES = loadImagesFromDirectory("./images/Human");
     }
 
     private static Icon[] loadImagesFromDirectory(String directoryPath) {
