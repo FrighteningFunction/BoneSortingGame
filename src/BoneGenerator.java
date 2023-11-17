@@ -18,13 +18,15 @@ public class BoneGenerator {
 
     private Bone currentBone;
 
+    public BoneGenerator(){
+        produceBone();
+    }
+
     /**
      * Produces a new bone, which will be randomly chosen based on the Bone class logic.
-     * @return The generated Bone instance.
      */
-    public Bone produceBone() {
+    public void produceBone() {
         currentBone = new Bone();
-        return currentBone;
     }
 
     /**

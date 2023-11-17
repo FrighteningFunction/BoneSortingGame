@@ -4,8 +4,6 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-import static java.lang.Math.floor;
-
 /**
  * it represents an individual bone
  *
@@ -13,17 +11,17 @@ import static java.lang.Math.floor;
  */
 public class Bone {
     public enum BoneType {
-        Alien,
-        Bird,
-        Human
+        Red,
+        Green,
+        Blue
     };
     BoneType boneType;
 
     Icon boneImage;
 
-    static Icon[] ALIEN_BONES;
-    static Icon[] BIRD_BONES;
-    static Icon[] HUMAN_BONES;
+    static Icon[] RED_BONES;
+    static Icon[] GREEN_BONES;
+    static Icon[] BLUE_BONES;
 
     /**
      * Spawns a bone randomly: chooses its type, then randomly pics
@@ -33,22 +31,22 @@ public class Bone {
         boneType = BoneType.values()[(int)(Math.random()*3)];
 
         switch(boneType){
-            case Alien:
-                boneImage = ALIEN_BONES[(int)(Math.random()*ALIEN_BONES.length)];
+            case Red:
+                boneImage = RED_BONES[(int)(Math.random()* RED_BONES.length)];
                 break;
-            case Bird:
-                boneImage = BIRD_BONES[(int)(Math.random()* BIRD_BONES.length)];
+            case Green:
+                boneImage = GREEN_BONES[(int)(Math.random()* GREEN_BONES.length)];
                 break;
-            case Human:
-                boneImage = HUMAN_BONES[(int)(Math.random()*HUMAN_BONES.length)];
+            case Blue:
+                boneImage = BLUE_BONES[(int)(Math.random()* BLUE_BONES.length)];
                 break;
         }
     }
 
     public static void loadBoneImages() {
-        ALIEN_BONES = loadImagesFromDirectory("./images/Alien");
-        BIRD_BONES = loadImagesFromDirectory("./images/Bird");
-        HUMAN_BONES = loadImagesFromDirectory("./images/Human");
+        RED_BONES = loadImagesFromDirectory("./BoneImages/Blue");
+        GREEN_BONES = loadImagesFromDirectory("./BoneImages/Green");
+        BLUE_BONES = loadImagesFromDirectory("./BoneImages/Red");
     }
 
     private static Icon[] loadImagesFromDirectory(String directoryPath) {
